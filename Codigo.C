@@ -7,7 +7,7 @@ int main () {
     float numero[TAMANHO], maior;
     for (int i = 0;i < TAMANHO;i++)
     {
-        printf("Digite um valor");
+        printf("\nDigite um valor: ");
         scanf("%f",&numero[i]);
         maior = numero[0];
         if (numero[i] > maior)
@@ -15,6 +15,6 @@ int main () {
             maior = numero[i];
         }
     }
-    printf("O maior número é %f", maior);
+    printf("\nO maior número é %.2f", maior);
     return 0;
 }
